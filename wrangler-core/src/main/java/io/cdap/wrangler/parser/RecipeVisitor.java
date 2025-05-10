@@ -306,6 +306,17 @@ public final class RecipeVisitor extends DirectivesBaseVisitor<RecipeSymbol.Buil
    * type <code>StringList</code> to be added to <code>TokenGroup</code>.
    */
   @Override
+public Token visitByteSizeArg(WranglerParser.ByteSizeArgContext ctx) {
+    String value = ctx.getText();
+    return new ByteSize(value); // from wrangler-api
+}
+
+@Override
+public Token visitTimeDurationArg(WranglerParser.TimeDurationArgContext ctx) {
+    String value = ctx.getText();
+    return new TimeDuration(value); // from wrangler-api
+}
+  @Override
   public RecipeSymbol.Builder visitStringList(DirectivesParser.StringListContext ctx) {
     List<TerminalNode> strings = ctx.String();
     List<String> strs = new ArrayList<>();
