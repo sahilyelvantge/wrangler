@@ -1,0 +1,14 @@
+Prompt 1:
+"Generate a Java method to parse strings like '10MB', '512KB', and return long bytes."
+
+Prompt 2:
+"How do I register a new directive in CDAP Wrangler?"
+
+Prompt 3:
+"Write a Maven plugin exclusion block to avoid apache-rat-plugin failing on .png or .g4 files"
+
+Prompt 4:
+"How to create a test for a custom directive in CDAP Wrangler using JUnit"
+
+Prompt 5:
+"Give a formula to convert 5 minutes into milliseconds in Java"
