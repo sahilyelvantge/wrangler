@@ -56,7 +56,8 @@ public class UsageDefinitionTest {
     usage = builder.build().toString();
     Assert.assertEquals("parse-as-csv :col  ['delimiter'] [header (true/false)]", usage);
     usages.add(usage);
-
+.define("sizeArg", TokenType.BYTE_SIZE)
+.define("durationArg", TokenType.TIME_DURATION)
     builder = UsageDefinition.builder("send-to-error");
     builder.define("expr", TokenType.EXPRESSION);
     builder.define("metric", TokenType.TEXT, Optional.TRUE);
